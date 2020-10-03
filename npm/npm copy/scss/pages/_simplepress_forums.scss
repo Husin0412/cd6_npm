@@ -1,0 +1,8 @@
+/* page.php / SimplePress Forums
+--------------------------------------------- */
+
+// This is a syntac highlighter hack because it keeps making the line number column 50% width
+#spMainContainer .sfcode table.syntax tr.toolbar_row td.toolbar_row:first-child {
+	max-width: 50px;
+	width: 50px;
+}

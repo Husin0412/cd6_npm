@@ -1,0 +1,31 @@
+@import '../../node_modules/bourbon-neat/app/assets/stylesheets/neat-helpers'; // don't touch
+
+
+// Adding a Visual Grid while you develop. Set to 'true.'
+$visual-grid: false;
+$visual-grid-color: #f00;
+$visual-grid-index: front;
+$visual-grid-opacity: .04;
+
+// Neat Overrides
+// $column: 90px;
+// $gutter: em(30);
+// $grid-columns: 12;
+// $max-width: em(1200); // Change this
+
+// Neat Breakpoints
+// 
+$first-breakpoint-value: 481px;
+$second-breakpoint-value: 769px;
+$third-breakpoint-value: 1025px;
+
+// $xsmall-view: new-breakpoint(min-width 0 max-width $first-breakpoint-value 4);
+// $small-view: new-breakpoint(min-width $first-breakpoint-value + 1 max-width $second-breakpoint-value 4);
+// $medium-view: new-breakpoint(min-width $second-breakpoint-value + 1 max-width $third-breakpoint-value 8);
+// $large-view: new-breakpoint(min-width $third-breakpoint-value + 1 12);
+
+$xsmall-view: new-breakpoint(min-width 0 4);
+$small-view: new-breakpoint(min-width $first-breakpoint-value 4);
+$medium-view: new-breakpoint(min-width $second-breakpoint-value 12);
+$large-view: new-breakpoint(min-width $third-breakpoint-value 12);
+

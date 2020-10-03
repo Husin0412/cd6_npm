@@ -1,0 +1,196 @@
+/* Docpress
+--------------------------------------------- */
+
+// Archive
+.archive.post-type-archive-docs  {
+    .page-header{
+        width: 100%;
+        height: auto;
+        min-height: 140px;
+        background: url(assets/img/single-header-bg.png) 50% no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        text-align: center;
+        h1{
+            display: inline-block;
+            margin-top: 45px;
+            margin-bottom: 35px;
+            position: relative;
+            text-transform: capitalize;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            color:white;
+            font-family: proxima-nova,sans-serif;
+            font-size: 38px;
+            &:before, &:after{
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 30px;
+                height: 2px;
+                margin: auto;
+                background-color: #fff;
+                content: " ";
+            }
+            &:before{
+                left: -45px;
+            }
+            &:after{
+                right: -45px;
+            }
+        }
+    }
+    article,
+    article:last-child{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+        float:none;
+        width: 100%;
+        a{
+            color:#000;
+        }
+    }
+    .docspress-archive{
+        .docspress-archive-list{
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            >.docspress-archive-list-item{
+                padding-left:0;
+                padding-right: 0;
+                margin-right: -1px;
+                margin-bottom: -1px;
+                position: relative;
+                border: 1px solid #eee;
+                font-size: 18px;
+                line-height: 28px;
+                >ul{
+                    padding-top: 20px;
+                    padding-bottom: 15px;
+                    a:hover{
+                        background-color: transparent;
+                        color:#f48000;
+                    }
+                    li> a:before{
+                        top: 15px;
+                    }
+                }
+                .docspress-archive-list-item-title{
+                    display: flex;
+                    align-items: center;
+                    border-bottom: 1px solid #eee;
+                    background-color: #f9f9f9;
+                    padding: 16px 20px;
+                    min-height: 73px;
+                    margin: 0;
+                    line-height: 1.4;
+                    text-transform: capitalize;
+                    &:hover>span h2{
+                        background-color: transparent;
+                        color:#f48000;
+                    }
+                }
+            } 
+    
+        }
+    } 
+}
+
+// Single
+.single.single-docs {
+    a{
+        &:hover{
+            background-color: transparent;
+            color:#f48000;
+        }
+    }
+    article {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+        float:none;
+        width: 100%;
+        &:last-child{
+            margin-right: auto;
+        }
+    }
+    .docspress-single-sidebar{
+        .docspress-nav-list li{
+            &.current_page_item>a,
+            a:hover{
+                color:#f48000;
+            }
+        }
+    }
+    .entry-content{
+        ul{
+            margin-top:10px;
+            margin-bottom: 20px;
+            padding-left: 45px;
+            li{
+                font-size: 18px;
+            }
+        }
+        p{
+            margin-bottom: 20px;
+        }
+        pre{
+            margin-bottom: 20px;
+        }
+        a{
+            color:#f48000;
+            &:hover{
+                color:#d26e00;
+            }
+        }
+        h2{
+            font-size: 36px;
+        }
+        h3{
+            font-size: 26px;
+        }
+        h4{
+            font-size: 22px;
+        }
+    }
+    .docspress-search-form-result{
+        .content .entry{
+            margin-bottom: 5px;
+            .entry-content h2{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.docspress-single .docspress-single-content a,
+.docspress-single .docspress-single-sidebar .docspress-nav-list li a,
+.post-type-archive-docs a,
+.docspress-archive .docspress-archive-list>.docspress-archive-list-item>ul a {
+    border-bottom: none;
+    box-shadow: none;
+}
+
+.docspress-single .docspress-single-content a:hover,
+.docspress-single .docspress-single-sidebar .docspress-nav-list li a:hover,
+.post-type-archive-docs a a:hover,
+.docspress-archive .docspress-archive-list>.docspress-archive-list-item>ul a:hover {
+    border-bottom: none;
+    box-shadow: none;
+    color: $base-font-color;
+}
+
+.docspress-single .docspress-single-content{
+    .nav-next a,
+    .nav-previous a,
+    .docspress-single-feedback-vote a{
+        border-bottom: 1px solid #e7e7e7;
+    }
+} 

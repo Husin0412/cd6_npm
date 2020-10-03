@@ -1,0 +1,163 @@
+/* front-page.php
+--------------------------------------------- */
+body.home, body.post-type-archive-service {
+	.section {
+		&.newsletter-wrap {
+			background-color: rgba(80,188,119,.69);
+		}
+		&.sect-light {
+			h5,
+			p {
+				color: #fff;
+			}
+			hr {
+				width: 100px;
+				border-bottom: 4px solid $light-border-color;
+			}
+		}
+		h5 {
+			color: $acsent-color;
+		}
+		hr {
+			border-bottom: 4px solid $base-border-color;
+		}
+	}
+	h1{ font-size: 38px; }
+	.front-before {
+		background: center center no-repeat;
+		background-size: cover;
+		.wrap {
+			height: auto;
+		}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin-bottom: 21px;
+			color: $white;
+			font-weight: 600;
+			line-height: 1em;
+		}
+		h1 {
+			font-size: 38px;
+		}
+		h2 {
+			font-size: 32px;
+		}
+		h3 {
+			font-size: 21px;
+		}
+		h4 {
+			font-size: 16px;
+		}
+		h5,h6 {
+			font-size: 14px;
+		}
+		span,
+		i {
+			color: $white;
+			font-size: 14px;
+			font-weight: normal;
+		}
+		strong {
+			font-weight: 600;
+		}
+		p {
+			margin-bottom: 40px;
+			color: $white;
+			font-size: 24px;
+		}
+		p:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+	.front-services {
+		background-color: $base-background-color;
+		.service-items {
+			p {
+				font-size: 16px;
+				line-height: 24px;
+			}
+			.item {
+				border: 1px solid $base-border-color ;
+				border-width: 1px 1px 0 0;
+				border-left: none;
+				text-align: center;
+				&:last-child {
+					border-width: 1px 0;
+				}
+				&:hover .mask-slide{
+					background-color: $acsent-color;
+					height: 100%;
+					p,
+					h6,
+					a {
+						color: $light-font-color;
+					}
+					.button {
+						border-color: $light-border-color;
+						color: $acsent-color;
+						background-color: $base-background-color;
+					}
+					.svg-holder {
+						fill: $white;
+					}
+				}
+			}
+			.svg-holder {
+				fill: $base-font-color;
+			}
+		}
+	}
+	.front-testimonial {
+		background-color: $base-background-color;;
+		.item {
+			margin-left: 0;
+			p {
+				color: $soft-gray;
+				font-size: 20px;
+				font-style: italic;
+				line-height: 30px;
+				text-align: center;
+				vertical-align: bottom;
+			}
+		}
+		.author {
+			text-align: center;
+			.image-wrap {
+				overflow: hidden;
+				border: 1px solid $light-border-color;
+				-webkit-border-radius: 5px;
+				   -moz-border-radius: 5px;
+				        border-radius: 5px;
+				img{
+					width: 40px;
+				}
+			}
+			p {
+				font-size: 18px;
+				font-style: normal;
+				line-height: 40px;
+			}
+			.testimonial-title {
+				color: $base-font-color;
+				font-weight: 600;
+			}
+		}
+	}
+	.front-newsletter {
+		background: url(assets/img/newsletter-bg.png) no-repeat fixed;
+		background-size: cover;
+	}
+	.front-client {
+		background-color: $base-border-color;
+		hr {
+			border-color: $dark-border-color !important;
+		}
+		.item {
+			overflow: auto;
+		}
+	}
+}
